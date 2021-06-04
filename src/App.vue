@@ -1,14 +1,14 @@
 <template>
-  <SignupForm />
+  <FormInput />
 </template>
 
 <script>
-import SignupForm from "./components/SignupForm";
+import FormInput from "./components/FormInput";
 
 export default {
   name: "App",
   components: {
-    SignupForm,
+    FormInput,
   },
 };
 </script>
@@ -25,6 +25,6 @@ export default {
 }
 
 body {
-  background-color: #f9efefee;
+  background-color: #bfb7b7ee;
 }
 </style>
