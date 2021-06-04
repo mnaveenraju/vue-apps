@@ -1,17 +1,16 @@
 <template>
- <SignupForm/>
+  <SignupForm />
 </template>
 
 <script>
-
-import SignupForm from "./components/SignupForm"
+import SignupForm from "./components/SignupForm";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    SignupForm
-  }
-}
+    SignupForm,
+  },
+};
 </script>
 
 <style>

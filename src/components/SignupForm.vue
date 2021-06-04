@@ -4,10 +4,10 @@
       <h2>Create a new Account</h2>
       <form @submit="signup" ref="signupForm">
         <label for="">Email</label>
-        <input type="text" placeholder="Email" v-model="email"/>
+        <input type="text" placeholder="Email" v-model="email" />
 
         <label for="">Password</label>
-        <input type="password" placeholder="Password" v-model="password"/>
+        <input type="password" placeholder="Password" v-model="password" />
 
         <button type="submit">Signup</button>
       </form>
@@ -22,14 +22,14 @@ export default {
     return {
       email: "",
       password: "",
-    }
+    };
   },
   methods: {
-      signup(event) {
-          console.log('signup', this.email, this.password);
-        event.preventDefault();
-      }
-  }
+    signup(event) {
+      console.log("signup", this.email, this.password);
+      event.preventDefault();
+    },
+  },
 };
 </script>
 
@@ -40,7 +40,7 @@ export default {
   width: 22em;
   border-radius: 6px;
   margin: 23vh auto;
-box-shadow: 0px 1px 5px 0px #b98282;
+  box-shadow: 0px 1px 5px 0px #b98282;
 }
 
 .signup-form h2 {
@@ -76,8 +76,9 @@ input {
 }
 
 input:focus {
-outline: none;
-    box-shadow: 0px 0px 3px 0px;}
+  outline: none;
+  box-shadow: 0px 0px 3px 0px #f9cfcf;
+}
 
 .signup-form button {
   padding: 7px;
@@ -86,7 +87,7 @@ outline: none;
   border-radius: 6px;
   color: #2c3e50;
   background-color: #8bf591;
-    border: none;
-    box-shadow: 0px 0px 4px 0px #8bf591;
+  border: none;
+  box-shadow: 0px 0px 4px 0px #8bf591;
 }
 </style>
